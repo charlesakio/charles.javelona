@@ -1,35 +1,31 @@
-<div layout="vertical" layout-fill>
-	<div>
-		<side-navbar/>
-	</div>
-	<md-content>
-    <header>
-      <acme-navbar creationDate="main.creationDate" />
-    </header>
-    <section class="jumbotron">
-      <h1>'Allo, 'Allo!</h1>
-      <p class="lead">
-        <img src="assets/images/yeoman.png" alt="I'm Yeoman"><br>
-        Always a pleasure scaffolding your apps.
-      </p>
-      <md-button class="md-raised animated infinite" ng-class="main.classAnimation" ng-click="main.showToastr()">Splendid Toastr</md-button>
-      <p>
-        With ♥ thanks to the contributions of<acme-malarkey extra-values="['Yeoman', 'Gulp', 'Angular']" />
-      </p>
-    </section>
+<!-- Container #1 (see wireframe) -->
+<div flex layout="row">
 
-    <div class="techs" layout-align="center">
-      <md-card ng-repeat="awesomeThing in main.awesomeThings | orderBy:'rank'">
-        <div class="thumbnail">
-          <img class="pull-right" ng-src="assets/images/{{ awesomeThing.logo }}" alt="{{ awesomeThing.title }}">
-          <div class="caption">
-            <h3>{{ awesomeThing.title }}</h3>
-            <p>{{ awesomeThing.description }}</p>
-            <p><a ng-href="{{ awesomeThing.url }}">{{ awesomeThing.url }}</a></p>
-          </div>
-        </div>
-      </md-card>
-    </div>
-  </md-content>
+	<md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="$mdMedia('gt-md')">
+		<md-toolbar>
+			<h1 class="md-display-1" layout="row" flex layout-align="center center">Charles Javelona</h1>
+		</md-toolbar>
+		<md-list layout="column">
+			<!-- List item #1 -->
+			<md-item >
+				<md-button>
+					<md-icon md-svg-src="icon-home" class="avatar"></md-icon>
+					Lia Luogo
+				</md-button>
+			</md-item>
+			<!-- List item #2 -->
+			<md-item >
+				<md-button>
+					<md-icon md-svg-src="icon-home" class="avatar"></md-icon>
+					Lawrence Ray
+				</md-button>
+			</md-item>
+		</md-list>
+	</md-sidenav>
+
+	<!--column--!>
+    <md-content flex id="content"></md-content>
 
 </div>
+
+

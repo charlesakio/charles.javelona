@@ -8,42 +8,41 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,700,700italic,400italic);
 
 html {
-  font-family: 'Roboto Slab', serif;
+	font-family: 'Roboto Slab', serif;
 }
 
 [layout=row] {
-  flex-direction: row;
+	flex-direction: row;
 }
 
 .browsehappy {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
+	margin: 0.2em 0;
+	background: #ccc;
+	color: #000;
+	padding: 0.2em 0;
+}
+md-sidenav {
+	min-width: 250px ;	
+	max-width: 250px;
+	position: fixed;
+
+	.md-sidenav-left.md-closed.ng-isolate-scope.md-locked-open {
+		height: 700px;
+	}
 }
 
-.thumbnail {
-  height: 200px;
+md-toolbar {
+	height: 210px;
+	background-color: #F44336;		
 
-  img.pull-right {
-    width: 50px;
-  }
+	h1.md-display-1{
+		padding-left: 50px;
+	}
 }
 
 
-.techs {
-  display: flex;
-  flex-flow: row wrap;
 
-  md-card {
-    width: 30%;
 
-    img.pull-right {
-      float: right;
-      width: 50px;
-    }
-  }
-}
 /**
  *  Do not remove this comments bellow. It's the markers used by gulp-inject to inject
  *  all your sass files automatically
