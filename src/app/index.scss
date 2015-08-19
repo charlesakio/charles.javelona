@@ -39,8 +39,69 @@ md-content {
 	background-color: #EEEEEE;	
 }
 
+.flip-container {
+	float: left;
+	position: relative;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	perspective: 1000px;
+	-webkit-perspective: 1000px; 
+}
 
+.flip-container,
+.flip-container .front-side,
+.flip-container .back-side {
+	width: 310px;
+	height: 150px;
+}
 
+.flip-container .front-side,
+.flip-container .back-side {
+	position: absolute;
+	top: 0;
+	left: 0;
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	transition: 1.2s;
+	-webkit-transition: 1.2s;
+	color: #fff;
+	font-size: 32px;
+	text-align: center;
+	padding-top: 20px;
+}
+
+.flip-container .back-side {
+	background-color: #333;
+	z-index: 1;
+	transform: rotateY(180deg);
+	-webkit-transform: rotateY(180deg);
+}
+
+.flip-container .front-side {
+	background-color: #5d3696;
+	z-index: 2;
+	transform: rotateY(0deg);
+	-webkit-transform: rotateY(0deg);
+}
+
+.flip-container:hover .front-side {
+	transform: rotateY(-180deg);
+	-webkit-transform: rotateY(-180deg);
+}
+
+.flip-container:hover .back-side {
+	transform: rotateY(0deg);
+	-webkit-transform: rotateY(0deg);
+}
+
+img.icon_img  {
+	height: 100px;
+	filter: brightness(0) invert(1);
+}
+
+a {
+	filter: brightness(0) invert(1);	
+}
 /**
  *  Do not remove this comments bellow. It's the markers used by gulp-inject to inject
  *  all your sass files automatically
