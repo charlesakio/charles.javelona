@@ -7,4 +7,5 @@ angular.module "charlesPortfolio"
         controller: "MainController"
         controllerAs: "main"
 
-    $urlRouterProvider.otherwise '/'
+	     $urlRouterProvider.otherwise '/'
+	
