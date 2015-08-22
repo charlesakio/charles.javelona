@@ -101,8 +101,19 @@ img.icon_img  {
 
 a {
 	filter: brightness(0) invert(1);
-    height: 300px;
-		
+    height: 300px;		
+}
+
+a.projects.ng-binding {
+	filter: brightness(2) invert(1);
+}
+
+.caption {
+    padding-left: 25px;	
+}
+
+h1.md-display-1 {
+	padding-left: 50px;
 }
 /**
  *  Do not remove this comments bellow. It's the markers used by gulp-inject to inject
