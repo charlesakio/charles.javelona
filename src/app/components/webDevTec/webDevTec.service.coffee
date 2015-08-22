@@ -2,33 +2,33 @@ angular.module "charlesPortfolio"
   .service "webDevTec", () ->
     data = [
       {
-        'title': 'AngularJS',
-        'url': 'https://angularjs.org/',
-        'description': 'HTML enhanced for web apps!',
+        'title': 'Udacity Portfolio',
+        'url': 'http://charlesakio.github.io/portfolio/udacity_portfolio/',
+        'description': 'A project required to create in Udacity Front-end NanoDegree',
         'logo': 'angular.png'
       },
       {
-        'title': 'BrowserSync',
-        'url': 'http://browsersync.io/',
-        'description': 'Time-saving synchronised browser testing.',
+        'title': 'Blog Engine',
+        'url': 'http://charlesjavelona.appspot.com/blog',
+        'description': 'A blog site created using Webapp2 in Google App Engine',
         'logo': 'browsersync.png'
       },
       {
-        'title': 'GulpJS',
-        'url': 'http://gulpjs.com/',
-        'description': 'The streaming build system.',
+        'title': 'Wiki Engine',
+        'url': 'http://buildawiki.appspot.com/',
+        'description': 'A wiki engine created using Webapp2 in Google App Engine.',
         'logo': 'gulp.png'
       },
       {
-        'title': 'Jasmine',
-        'url': 'http://jasmine.github.io/',
-        'description': 'Behavior-Driven JavaScript.',
+        'title': 'StudentJob',
+        'url': 'https://student-job-board.herokuapp.com/',
+        'description': 'A platform that connects students to part-time work and internships.',
         'logo': 'jasmine.png'
       },
       {
-        'title': 'Karma',
+        'title': 'Charles Porfolio',
         'url': 'http://karma-runner.github.io/',
-        'description': 'Spectacular Test Runner for JavaScript.',
+        'description': 'A portfolio created to learn AngularJS and Coffescript.',
         'logo': 'karma.png'
       },
       {
@@ -36,24 +36,6 @@ angular.module "charlesPortfolio"
         'url': 'https://github.com/angular/protractor',
         'description': 'End to end test framework for AngularJS applications built on top of WebDriverJS.',
         'logo': 'protractor.png'
-      },
-      {
-        'title': 'Angular Material Design',
-        'url': 'https://material.angularjs.org/#/',
-        'description': 'The Angular reference implementation of the Google\'s Material Design specification.',
-        'logo': 'angular-material.png'
-      },
-      {
-        'title': 'Sass (Node)',
-        'url': 'https://github.com/sass/node-sass',
-        'description': 'Node.js binding to libsass, the C version of the popular stylesheet preprocessor, Sass.',
-        'logo': 'node-sass.png'
-      },
-      {
-        'title': 'CoffeeScript',
-        'url': 'http://coffeescript.org/',
-        'description': 'CoffeeScript, \'a little language that compiles into JavaScript\'.',
-        'logo': 'coffeescript.png'
       }
     ]
 

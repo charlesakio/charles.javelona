@@ -55,8 +55,21 @@
 			<md-content flex id="content" layout-padding style="height: 600px;padding: 24px;">	
 				<profile-page></profile-page>
 				<skill-page></skill-page>
-			</md-content>
 
-		</div>
+				<md-card ng-repeat="awesomeThing in main.awesomeThings | orderBy:'rank'">
+					<img class="right" ng-src="assets/images/{{ awesomeThing.logo }}" alt="{{ awesomeThing.title }}">
+					<div class="caption">
+						<h3>{{ awesomeThing.title }}</h3>
+						<p>{{ awesomeThing.description }}</p>
+						<p><a ng-href="{{ awesomeThing.url }}">{{ awesomeThing.url }}</a></p>
+					</div>
+					<md-divider></md-divider>
+				</md-card>
+
+				</md-content>
+
+
+
+			</div>
 
 
