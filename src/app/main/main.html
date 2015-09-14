@@ -5,11 +5,11 @@
 		<md-toolbar>
 			<h1 class="md-display-1" layout="row" flex layout-align="center center">Charles Javelona</h1>
 		</md-toolbar>
-		<md-list layout="column" >
+		<md-list ng-controller="MainController" layout="column" >
 			<!-- Insert Profile-->
 			<md-item>
 				<md-button>
-					<md-icon md-svg-src="icon-home" class="avatar"></md-icon>
+					<md-icon ng-click="gotoAnchor(1)" gmd-svg-src="icon-home" class="avatar"></md-icon>
 					Profile
 				</md-button>
 			</md-item>
@@ -34,7 +34,7 @@
 
 		<!--column--!>
 		<md-content flex id="content" layout-padding style="height: 600px;padding: 24px;">	
-			<profile-page></profile-page>
+			<profile-page id="anchor1"></profile-page>
 			<skill-page></skill-page>
 
 			<md-toolbar>
@@ -50,11 +50,17 @@
 				</div>
 				<md-divider></md-divider>
 			</md-card>
+			<div class="fixed-header" ng-controller="MainController">
+				<a href="" ng-click="gotoAnchor(x)" ng-repeat="x in [1,2,3,4,5]">
+					Go to anchor {{x}}
+				</a>
+			</div>
+			<div id="anchor{{x}}" class="anchor" ng-repeat="x in [1,2,3,4,5]">
+				Anchor {{x}} of 5
+				<br><br><br><br><br>
+			</div>
 
 		</md-content>
-
-
-
 	</div>
 
 
